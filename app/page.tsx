@@ -1,25 +1,29 @@
-import Truckcard from "./components/Truckcard";
-import arreglo from "../json/truksarray.json";
+import Bidcard from "./components/Bidcard";
+import bidarray from "../json/bidarray.json";
+import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
 export default function Home() {
   return (
     <>
-      <div className="grid text-center lg:mb-0 lg:w-full lg:max-w-10xl lg:grid-cols-5 lg:text-left">
-        {arreglo.map((truck, index) => {
+      <ThemeSwitcher/>
+      <div className="grid text-center g:mb-0 lg:w-full lg:max-w-10xl lg:grid-cols-5 lg:text-left">
+        {bidarray.map((bid, index) => {
           return (
-            <Truckcard
-              key={index}
-              image={truck.image}
-              title={truck.title}
-              description={truck.description}
-              province={truck.province}
-              municipio={truck.municipio}
-              chofer={truck.chofer}
-              solicitudes={truck.solicitudes}
-            />
-          )
+            <div className="m-1" key={index}>
+              <Bidcard
+                image={bid.image}
+                title={bid.title}
+                description={bid.description}
+                peso={bid.peso}
+                volumen={bid.volumen}
+                precio={bid.precio}
+                solicitudes={bid.solicitudes}
+                distancia={bid.distancia}
+              />
+            </div>
+          );
         })}
-      </div>      
+      </div>
     </>
   );
 }

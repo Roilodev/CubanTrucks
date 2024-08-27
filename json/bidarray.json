@@ -1,0 +1,89 @@
+[
+  {
+    "image": "/bid1.jpg",
+    "title": "Ganado Porcino",
+    "description": "Solicitado por Empresa de distribución de cárnicos.",
+    "peso": "350Kgs",
+    "volumen": "12m³",
+    "precio": "$20,000",
+    "solicitudes":2,
+    "distancia": "56Km"
+  },
+  {
+    "image": "/bid2.jpg",
+    "title": "Mudanza",
+    "description": "Solicitado por MIPYME 'La Coronela'.",
+    "peso": "2,600Kgs",
+    "volumen": "32m³",
+    "precio": "$15,000",
+    "solicitudes":5,
+    "distancia": "10Km"
+  },
+  {
+    "image": "/bid3.jpg",
+    "title": "Naranjas",
+    "description": "Solicitado por MIPYME 'La Coronela'.",
+    "peso": "1,240Kgs",
+    "volumen": "120m³",
+    "precio": "$125,000",
+    "solicitudes": 1,
+    "distancia": "250Km"
+  },
+  {
+    "image": "/bid4.jpg",
+    "title": "Tomates",
+    "description": "Solicitado por ACOPIO Municipio Guanabacoa.",
+    "peso": "1,025Kgs",
+    "volumen": "50m³",
+    "precio": "$350,000",
+    "solicitudes": 3,
+    "distancia": "700Km"
+  },
+  {
+    "image": "/bid5.jpg",
+    "title": "Materia Prima",
+    "description": "Solicitado por Universidad de la Habana.",
+    "peso": "2,000Kgs",
+    "volumen": "260m³",
+    "precio": "$15,000",
+    "solicitudes": 1,
+    "distancia": "100Km"
+  },
+  {
+    "image": "/bid6.jpg",
+    "title": "Cerveza",
+    "description": "Solicitado por Bebidas y Licores.",
+    "peso": "12,000Kgs",
+    "volumen": "300m³",
+    "precio": "$200,000",
+    "distancia": "105Km"
+  },
+  {
+    "image": "/bid7.jpg",
+    "title": "Tablones de Madera",
+    "description": "Solicitado por Carpiintería 'Los Ramones'.",
+    "peso": "50,000Kgs",
+    "volumen": "200m³",
+    "precio": "$25,000",
+    "solicitudes": 7,
+    "distancia": "210Km"
+  },
+  {
+    "image": "/bid8.jpg",
+    "title": "Ladrillos",
+    "description": "Solicitado por Constructora COBAS.",
+    "peso": "50,500Kgs",
+    "volumen": "20m³",
+    "precio": "$125,000",
+    "distancia": "120Km"
+  },
+  {
+    "image": "/bid9.png",
+    "title": "Verduras",
+    "description": "Solicitado por Empresa distribuidora de Alimentos.",
+    "peso": "10,500Kgs",
+    "volumen": "250m³",
+    "precio": "$525,000",
+    "distancia": "1120Km"
+  }
+]
