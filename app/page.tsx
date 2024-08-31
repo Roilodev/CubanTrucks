@@ -1,11 +1,12 @@
+'use client'
+import React from "react";
 import Bidcard from "./components/Bidcard";
 import bidarray from "../json/bidarray.json";
-import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
 export default function Home() {
   return (
     <>
-      <ThemeSwitcher/>
+      
       <div className="grid text-center g:mb-0 lg:w-full lg:max-w-10xl lg:grid-cols-5 lg:text-left">
         {bidarray.map((bid, index) => {
           return (
@@ -21,6 +22,7 @@ export default function Home() {
                 distancia={bid.distancia}
               />
             </div>
+
           );
         })}
       </div>

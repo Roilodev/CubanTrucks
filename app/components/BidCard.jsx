@@ -1,6 +1,7 @@
 "use client";
-import Image from "next/image";
 import { useState } from "react";
+import { Card, CardHeader, CardFooter, Image, Link } from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure, Button, Checkbox, Input } from "@nextui-org/react";
 
 export default function BidCard({
   image,
@@ -16,54 +17,73 @@ export default function BidCard({
   const addSol = () => {
     setSolCantidad(solCantidad + 1);
   };
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <>
-      <div className="max-w-sm mx-auto items-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <Modal
+        backdrop="opaque"
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        placement="top-center"
+      >
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">{title}<p className="text-black text-tiny">Oferta actual: ${precio}</p></ModalHeader>
+              <ModalBody>
+                <Input
+                  type="number"
+                  label="Tu Oferta"
+                  placeholder="0.00"
+                  defaultValue={precio}
+                  labelPlacement="outside"
+                  endContent={
+                    <div className="pointer-events-none flex items-center">
+                      <span className="text-default-400 text-small">$</span>
+                    </div>
+                  }
+                />
+              </ModalBody>
+              <ModalFooter>
+                <Button color="danger" variant="flat" onPress={onClose}>
+                  Cancelar
+                </Button>
+                <Button color="primary" onPress={onClose}>
+                  Enviar
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
+      <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
+        <CardHeader className="absolute z-10 flex-col items-start bg-white/80">
+          <p className="text-black text-tiny">Peso total de la carga: {peso}</p>
+          <h4 className="text-black font-medium text-2xl">{title}</h4>
+          {solCantidad > 0 && (
+            <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full end-2 dark:border-gray-900">
+              {solCantidad}
+            </div>
+          )}
+        </CardHeader>
         <Image
-          className="rounded-t-lg"
+          removeWrapper
+          alt="Card example background"
+          className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
           src={image}
-          alt=""
-          width={400}
-          height={350}
-          quality={75}
-          priority
         />
-        <div className="p-5">
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            {title}
-          </h5>
-          <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">
-            {distancia + " | " + precio + " | " + peso + " | " + volumen}
-          </span>
-          <h1 className="mb-3 mt-3 text-medium text-gray-700 dark:text-gray-400">
-            {description}
-          </h1>
-          <button
-            type="button"
-            onClick={addSol}
-            className="relative lg:w-full inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-900 hover:ring-4 hover:outline-none hover:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            <svg
-              className="w-4 h-4 me-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 20 16"
-            >
-              <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
-              <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
-            </svg>
-            Ofertar Ahora
-            <div className="w-16">&nbsp;</div>
-            {solCantidad > 0 && (
-              <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
-                {solCantidad}
-              </div>
-            )}
-          </button>
-        </div>
-      </div>
+        <CardFooter className="absolute bg-white/90 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+          <div>
+            <p className="text-black text-tiny">Distancia: {distancia}</p>
+            <p className="text-black text-tiny">Oferta actual: ${precio}</p>
+          </div>
+          <Button className="text-tiny" color="primary" radius="full" size="sm" onPress={onOpen}>
+            Licitar
+          </Button>
+        </CardFooter>
+      </Card>
     </>
+
   );
 }

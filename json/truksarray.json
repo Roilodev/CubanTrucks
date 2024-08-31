@@ -123,4 +123,130 @@
     "title": "QUICO PLAYA",
     "province": "La Habana",
     "municipio": "10 de Octubre"
+  },
+  {
+    "image": "/truck1.jpg",
+    "title": "B8-352684",
+    "description":"Transporte de Materiales de la construcción y más.",
+    "chofer": "/chofer1.jpg",
+    "province": "La Habana",
+    "municipio": "Playa",
+    "solicitudes": 3
+  },
+  {
+    "image": "/truck2.jpg",
+    "title": "Shevrolet-2651",
+    "description":"Transporte de Personal a Playas y otras actividades.",
+    "chofer": "/chofer2.jpg",
+    "province": "Camaguey",
+    "municipio": "Esmeralda",
+    "solicitudes": 1
+  },
+  {
+    "image": "/truck3.jpg",
+    "title": "FELIPITO TRUCK",
+    "description":"Transporte de Personal a Playas y otras actividades.",
+    "chofer": "/chofer3.jpg",
+    "province": "Holguín",
+    "municipio": "Cueto"
+  },
+  {
+    "image": "/truck4.jpg",
+    "title": "CAIMAN",
+    "description":"Transporte de carga, mudanzas y más.",
+    "province": "Santiago de Cuba",
+    "chofer": "/chofer4.jpg",
+    "municipio": "Palma Soriano",
+    "solicitudes": 8
+  },
+  {
+    "image": "/truck5.jpg",
+    "chofer": "/chofer5.jpg",
+    "description":"Transporte de Personal para actividades religiosas.",
+    "title": "CHEVROLET 1010",
+    "province": "Santiago de Cuba",
+    "municipio": "Mella"
+  },
+  {
+    "image": "/truck6.jpg",
+    "chofer": "/chofer6.jpg",
+    "description":"Transporte de Plantas ornamentales hasta tu hogar.",
+    "title": "DOMINUS PIZZA",
+    "province": "Ciego de Avila",
+    "municipio": "Morón"
+  },
+  {
+    "image": "/truck7.jpg",
+    "chofer": "/chofer7.jpg",
+    "description":"Transporte interprovincial de Personal.",
+    "title": "ORIGEN",
+    "province": "Matanzas",
+    "municipio": "Jovellanos"
+  },
+  {
+    "image": "/truck8.jpg",
+    "description":"Transporte de materiales, animales, madera y más.",
+    "chofer": "/chofer8.jpg",
+    "title": "LAS MARIANAS",
+    "province": "Matanzas",
+    "municipio": "Jaguey grande",
+    "solicitudes": 2
+  },
+  {
+    "image": "/bus1.jpg",
+    "chofer": "/chofer1.jpg",
+    "description":"Transporte de Personal (Pasadías).",
+    "title": "TRANSTUR",
+    "province": "La Habana",
+    "municipio": "Plaza",
+    "solicitudes": 1
+  },
+  {
+    "image": "/truck9.jpg",
+    "chofer": "/chofer9.jpg",
+    "description":"Transporte de ganado porsino, avícola, conejos ...",
+    "title": "GOMEZ TRUCK",
+    "province": "Villa Clara",
+    "municipio": "Manicaragua"
+  },
+  {
+    "image": "/truck10.jpg",
+    "chofer": "/chofer10.jpg",
+    "description":"Transporte de Personal a Playas y otras actividades.",
+    "title": "HAYME",
+    "province": "Pinar de Rio",
+    "municipio": "Los Palacios"
+  },
+  {
+    "image": "/bus2.jpg",
+    "chofer": "/chofer3.jpg",
+    "description":"Transporte de estudiantes a campismos.",
+    "title": "ECOLIER",
+    "province": "Holguín",
+    "municipio": "Moa",
+    "solicitudes": 7
+  },
+  {
+    "image": "/truck11.jpg",
+    "description":"Transporte de Personal a Playas y ptras actividades.",
+    "chofer": "/chofer11.jpg",
+    "title": "MIRAMAR S.A",
+    "province": "La Habana",
+    "municipio": "Guanabacoa"
+  },
+  {
+    "image": "/triciclo1.jpg",
+    "description":"Transporte de Personal hasta la puerta de su casa.",
+    "chofer": "/chofer8.jpg",
+    "title": "TRICICLO ROLO",
+    "province": "La Habana",
+    "municipio": "La Lisa"
+  },
+  {
+    "image": "/truck12.jpg",
+    "chofer": "/chofer12.jpg",
+    "description":"Transporte de Personal para actividades religiosas.",
+    "title": "QUICO PLAYA",
+    "province": "La Habana",
+    "municipio": "10 de Octubre"
   }]
